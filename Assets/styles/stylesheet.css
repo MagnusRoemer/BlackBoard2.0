@@ -67,7 +67,7 @@ header {
 	overflow: auto;
 	padding-top: 29px;
 }
-/* Sidebar 
+/* Sidebar */
 #content .sidebar {
 	font-family: 'Montserrat', sans-serif;
 	color: rgba(146,146,146,1.00);
@@ -187,13 +187,7 @@ footer div a {
 /* Menus in sidebar 							this is the one*/
 .sidebar #menubar .menu {
 	margin-bottom: 29px;
-	position: fixed;
-	border-style: solid;
-	border-color: black;
-	border-radius: 30px;
-	background: #487A6D;
-	opacity: 0.8;
-	margin-left: -110px;
+	position: relative;
 	
 	
 }
