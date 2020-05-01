@@ -395,9 +395,9 @@ header #headerLinks a {
 
 .flip-card {
   background-color: transparent;
-  width: 700px;
+  width: 300px;
   height: 300px;
-  margin-left: 100px;
+  margin-left: 300px;
   margin-bottom: 50px;
   border-style: solid;
   border-radius: 30px;
@@ -450,4 +450,17 @@ header #headerLinks a {
   color: white;
   transform: rotateY(180deg);
 }
+.flex-container {
+  display: flex;
+  background-color: transparent;
+}
+
+.flex-container > div {
+  background-color: transparent;
+  margin: 10px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+
 
