@@ -2,7 +2,7 @@
 /* Global Styles */
 #SDU{
 	float: left;
-	margin-left 15px;
+	margin-left: 15px;
 	width: 10%;
 	height: auto;
 }
@@ -394,7 +394,7 @@ header #headerLinks a {
 }
 
 .flip-card {
-  background-color: royalblue;
+  background-color: rgba(67,154,134,1.00);
   width: 550px;
   height: 300px;
   margin-left: 300px;
@@ -404,18 +404,12 @@ header #headerLinks a {
   perspective: 1000px;
 }
 
-#courses{
+.courses{
 	border-radius: 30px;
-	width: 300px;
-  	height: 300px;
+	width: auto;
+  	height: auto;
 }
 
-#schedules{
-	border-radius: 30px;
-	border-style: solid;
-	width: 300px;
-  	height: 300px;
-}
 
 .flip-card-inner {
   position: relative;
@@ -446,7 +440,7 @@ header #headerLinks a {
 }
 
 .flip-card-back {
-  background-color: #2980b9;
+  background-color: rgba(67,154,134,1.00);
   color: white;
   transform: rotateY(180deg);
 }
@@ -456,7 +450,7 @@ header #headerLinks a {
 }
 
 .flex-container > div {
-  background-color: royalblue;
+  background-color: transparent;
   margin: 10px;
   padding: 5px;
   font-size: 15px;
