@@ -394,8 +394,8 @@ header #headerLinks a {
 }
 
 .flip-card {
-  background-color: transparent;
-  width: 300px;
+  background-color: royalblue;
+  width: 550px;
   height: 300px;
   margin-left: 300px;
   margin-bottom: 50px;
@@ -413,7 +413,7 @@ header #headerLinks a {
 #schedules{
 	border-radius: 30px;
 	border-style: solid;
-	width: 700px;
+	width: 300px;
   	height: 300px;
 }
 
@@ -437,7 +437,7 @@ header #headerLinks a {
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  border-radius: 30px;
+  border-radius: 20px;
 }
 
 .flip-card-front {
@@ -456,9 +456,9 @@ header #headerLinks a {
 }
 
 .flex-container > div {
-  background-color: transparent;
+  background-color: royalblue;
   margin: 10px;
-  padding: 10px;
+  padding: 5px;
   font-size: 15px;
 }
 
