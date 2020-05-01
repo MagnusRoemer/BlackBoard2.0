@@ -1,0 +1,43 @@
+var channelModule =
+{
+  init : function( channelExtRef )
+  {
+	var listChannelId = 'list_channel' + channelExtRef;
+	if( $( listChannelId ) )
+	{
+	  $A( document.getElementsByClassName( 'channelToggleAnchor', $( listChannelId ) ) ).each( function( toggleAnchor )
+	  {
+		Event.observe( toggleAnchor, 'click',
+		  function( event ) {
+		    this.toggleDescription( event, toggleAnchor, channelExtRef );
+		    Event.stop( event );
+		  }.bind( this )
+		);
+	  }.bind( this ) );
+	}
+    for(var i=0; i<document.links.length; i++)
+    {
+      document.links[i].target = "_blank";
+    }
+  },
+  toggleDescription : function( event, toggleAnchor, channelExtRef )
+  {
+    var toggleEl = $( toggleAnchor.id.sub( 'link', 'description' ) );
+    var title = toggleAnchor.next( '.extLink' ).innerHTML;
+    if( toggleEl.visible() )
+    {
+      toggleAnchor.down().src = getCdnURL( '/images/ci/icons/tree_expand.gif' );
+      var showMsg = page.bundle.getString( 'moduletype.channel.view.description.show' );
+      toggleAnchor.down().alt = page.bundle.getString( 'common.pair.colon', showMsg, title );
+      toggleEl.hide();
+    }
+    else
+    {
+      toggleAnchor.down().src = getCdnURL( '/images/ci/icons/tree_collapse.gif' );
+      var hideMsg = page.bundle.getString( 'moduletype.channel.view.description.hide' );
+      toggleAnchor.down().alt = page.bundle.getString( 'common.pair.colon', hideMsg, title );
+      toggleEl.show();
+    }
+    parent.page.onResizeChannelIframe( channelExtRef );
+  }
+};
