@@ -392,7 +392,7 @@ header #headerLinks a {
 	min-height: 100%;
 	min-width: 1040px;
 }
-
+/*
 .flip-card {
   background-color: rgba(67,154,134,1.00);
   width: 550px;
@@ -444,6 +444,7 @@ header #headerLinks a {
   color: white;
   transform: rotateY(180deg);
 }
+
 .flex-container {
   display: flex;
   background-color: transparent;
@@ -455,6 +456,6 @@ header #headerLinks a {
   padding: 5px;
   font-size: 15px;
 }
-
+*/
 
 
