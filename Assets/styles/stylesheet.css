@@ -36,7 +36,8 @@ header {
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: rgba(67,154,134,1.00);
-	border-radius: 10px;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
 }
 /* Links in header */
 #headerLinks a {
@@ -57,10 +58,29 @@ header {
 	clear: both;
 	background-color: rgba(246,246,246,1.00);
 	color: black;
-	padding-left: 115px;
+	padding-left: 15px;
 	padding-top: 7px;
+    border-bottom-left-radius: 0px;
 	
 }
+#offer a {
+    list-style-type: none;
+    float:right; 
+    position: relative;
+    margin-right: 10px;
+}
+
+#offer #profilePic{
+    position: relative;
+    float: left;
+    border-radius: 50px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    margin-left: -15px;
+    margin-top: -25px;
+
+}
+
 /* Main content of the site */
 #content {
 	clear: both;
@@ -260,10 +280,6 @@ footer .footerlinks {
 	overflow: hidden;
 	width: 95%;
 	padding-top: 0px;
-}
-/* offer banners content */
-#mainWrapper #offer p {
-	font-size: small;
 }
 /* main content region of page */
 #mainWrapper #content .mainContent {
