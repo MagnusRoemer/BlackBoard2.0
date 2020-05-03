@@ -392,6 +392,12 @@ header #headerLinks a {
 	min-height: 100%;
 	min-width: 1040px;
 }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 /*
 .flip-card {
   background-color: rgba(67,154,134,1.00);
