@@ -6,9 +6,6 @@
 	width: 10%;
 	height: auto;
 }
-a:hover {
-	color: rgba(255,255,255,1.00);
-}
 /*header*/
 header {
 	font-family: 'Montserrat', sans-serif;
@@ -39,44 +36,32 @@ header {
 	border-top-left-radius: 30px;
 	border-top-right-radius: 30px;
 }
-/* Links in header */
-#headerLinks a {
-	text-decoration: none;
-	border-style: solid;
-	border-radius: 10px;
-	color: #FFFFFF;
-	padding-left: 16px;
-	padding-right: 16px;
-	margin-right: 20px;
-	font-size: 14px;
-
-}
 /* Offer text banner*/
 #offer {
 	opacity: 0.8;
 	font-family: 'Montserrat', sans-serif;
 	clear: both;
 	background-color: rgba(246,246,246,1.00);
-	color: black;
+	color: dimgrey;
 	padding-left: 15px;
-	padding-top: 7px;
-    border-bottom-left-radius: 0px;
+	padding: 10px;
+    border-bottom-left-radius: 30px;
 	
 }
-#offer a {
-    list-style-type: none;
-    float:right; 
-    position: relative;
-    margin-right: 10px;
+#offer ul li a{
+    float:left; 
+    position: absolute;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+
 }
 
 #offer #profilePic{
     position: relative;
     float: left;
-    border-radius: 50px;
-    border-bottom-left-radius: 0px;
-    border-top-left-radius: 0px;
-    margin-left: -15px;
+    border-radius: 65px;
+    margin-left: -35px;
     margin-top: -25px;
 
 }
