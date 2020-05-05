@@ -396,11 +396,18 @@ header #headerLinks a {
 	min-width: 1040px;
 }
 .mainContainer {
-  
   float: right;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 40px;
   width: 80%;
-  margin: 30px;
+  opacity: 0.8;
+  border-radius: 30px;
+  padding: 10px;
+  background-color: rgba(246,246,246,1.00);
+  text-align: center
+}
+
+.mainContainer .* {
+	
 }
