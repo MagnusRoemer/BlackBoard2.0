@@ -5,6 +5,7 @@
 	margin-left: 15px;
 	width: 10%;
 	height: auto;
+    background-color: transparent;
 }
 /*header*/
 header {
@@ -407,6 +408,18 @@ header #headerLinks a {
   background-color: rgba(246,246,246,1.00);
   text-align: center
 }
+.mainContainerTextTop {
+	float: right;
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  width: 80%;
+  opacity: 0.8;
+  border-radius: 30px;
+  padding: 10px;
+  background-color: rgba(67,154,134,1.00);
+  text-align: left;
+}
 
 .mainContainerText {
 	float: right;
@@ -414,7 +427,7 @@ header #headerLinks a {
   margin-top: 0px;
   margin-bottom: 20px;
   width: 80%;
-  opacity: 1;
+  opacity: 0.8;
   border-radius: 30px;
   padding: 10px;
   background-color: rgba(246,246,246,1.00);
