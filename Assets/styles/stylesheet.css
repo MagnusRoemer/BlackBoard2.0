@@ -401,35 +401,39 @@ header #headerLinks a {
   display: block;
   margin-top: 0px;
   margin-bottom: 40px;
-  width: 80%;
-  opacity: 0.8;
+  width: auto;
+  opacity: 1;
   border-radius: 30px;
   padding: 10px;
   background-color: rgba(246,246,246,1.00);
-  text-align: center
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
 }
 .mainContainerTextTop {
-	float: right;
+  float: right;
   display: block;
-  margin-top: 0px;
+  margin-top: -15px;
   margin-bottom: 20px;
-  width: 80%;
-  opacity: 0.8;
+  width: auto;
   border-radius: 30px;
-  padding: 10px;
+  border:2px solid #929292;
+  padding: 20px;
   background-color: rgba(67,154,134,1.00);
   text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  overflow: visible;
 }
 
 .mainContainerText {
-	float: right;
+  float: right;
   display: block;
   margin-top: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   width: 80%;
-  opacity: 0.8;
   border-radius: 30px;
-  padding: 10px;
+  border:2px solid #929292;
+  padding: 20px;
   background-color: rgba(246,246,246,1.00);
   text-align: left;
+  font-family: 'Montserrat', sans-serif;
 }
