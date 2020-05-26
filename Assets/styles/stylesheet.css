@@ -414,7 +414,7 @@ header #headerLinks a {
   display: block;
   margin-top: -15px;
   margin-bottom: 20px;
-  width: auto;
+  width: 80%;
   border-radius: 30px;
   border:2px solid #929292;
   padding: 20px;
