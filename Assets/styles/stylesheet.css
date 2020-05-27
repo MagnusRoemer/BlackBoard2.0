@@ -27,7 +27,6 @@ header {
 }
 /* div for Links in header */
 #headerLinks {
-	opacity: 0.6;
     float: left;
     width: 100%;
     text-align: right;
