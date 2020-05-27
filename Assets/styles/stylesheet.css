@@ -401,8 +401,7 @@ header #headerLinks a {
   display: block;
   margin-top: 0px;
   margin-bottom: 40px;
-  width: auto;
-  opacity: 1;
+  width: 80%;
   border-radius: 30px;
   padding: 10px;
   background-color: rgba(246,246,246,1.00);
