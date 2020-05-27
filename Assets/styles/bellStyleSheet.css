@@ -1,0 +1,113 @@
+.box {
+	position: absolute;
+    top: 10%;
+    left: 85%;
+    transform: translate(-50%,-50%);
+}
+.notifications {
+	width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+.notifications:hover {
+	width: 300px;
+    height: 60px;
+    text-align: left;
+    padding: 0 15px;
+    background: #439a86;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+
+}
+.notifications .fas {
+	color: #cecece;
+    line-height: 60px;
+    font-size: 30px;
+}
+.notifications:hover .fas {
+	color: #fff;
+}
+.notifications .num {
+	position: absolute;
+    top: 0;
+    right: -5px;
+    width: 25px;
+    height: 25;
+    border-radius: 50%;
+    background: #ff2c74;
+    color: #fff;
+    line-height: 25px;
+    font-family: sans-serif;
+    text-align: center;
+}
+.notifications:hover .num {
+    position: relative;
+    background: transparent;
+    color: #fff;
+    font-size: 24px;
+    top: -4px;   
+}
+.notifications:hover .num:after {
+    content: ' Notification'
+}
+.bell-ul{
+    position: absolute;
+    left: 0;
+    top: 60px;
+    margin: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    padding: 20px;
+    box-sizing: border-box;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    display: none;
+}
+.notifications:hover ul {
+	display: block;
+}
+
+.bell-ul li{
+    list-style: none;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    padding: 8px 0;
+    display: flex;
+}
+
+.bell-ul li:last-child{
+    border-bottom: none;
+}
+
+.bell-ul li .icon{
+    width: 24px;
+    height: 24px;
+    background: #ccc;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-right: 15px;
+}
+.bell-ul li .icon{
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+}
+.bell-ul li .text{
+    position: relative;
+    font-family: sans-serif;
+    color: black;
+    top: 3px;
+    cursor: pointer;
+}
+.bell-ul li:hover .text{
+    font-weight: bold;
+    color: #439a86;
+}
+
+
+
