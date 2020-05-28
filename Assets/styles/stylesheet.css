@@ -454,16 +454,13 @@ text-align: center;
     justify-content: center;
 }
 .flex-ContainerContainer{
-float: center;
     display: flex;
-  margin-top: 0px;
-  margin-bottom: 0px;
+    align-items: flex-start;
   border-radius: 30px;
   border:2px solid #929292;
   background-color: rgba(246,246,246,1.00);
   font-family: 'Montserrat', sans-serif;
-    justify-content: center;
-    text-align: center;
+
 }
 .Students {
     text-align: center;
