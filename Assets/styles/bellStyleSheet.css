@@ -1,19 +1,49 @@
-
-.box {
-	position: relative;
-    float:right;
+/*the container of the profilpic notification*/
+.box1 {
+    position: relative;
+    float: left;
     z-index: 100;
 }
-.notifications {
-	width: 60px;
+
+/*the container of both "help & darktheme"*/
+.box2 {
+    position: relative;
+    float: right;
+    z-index: 100;
+}
+
+#profileNot.notifications {
+    width: 60px;
     height: 60px;
     background: #fff;
     border-radius: 30px;
     box-sizing: border-box;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
 }
-.notifications:hover  {
+
+#profileNot.notifications:hover {
+    width: 600px;
+    height: 120px;
+    text-align: left;
+    padding: 0px;
+    background: #439a86;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    z-index: 300;
+}
+
+.notifications {
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+}
+
+.notifications:hover {
     width: 300px;
     height: 60px;
     text-align: left;
@@ -22,22 +52,24 @@
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     z-index: 100;
-
 }
+
 .notifications .fas {
-	color: #cecece;
+    color: #cecece;
     line-height: 60px;
     font-size: 30px;
 }
+
 .notifications:hover .fas {
-	color: #fff;
+    color: #fff;
 }
+
 .notifications .num {
-	position: absolute;
+    position: absolute;
     top: 0;
-    right: -5px;
+    right: -15px;
     width: 25px;
-    height: 25;
+    height: 25px;
     border-radius: 50%;
     background: #ff2c74;
     color: #fff;
@@ -45,62 +77,79 @@
     font-family: sans-serif;
     text-align: center;
 }
+
 .notifications:hover .num {
     position: relative;
     background: #439a86;
     color: #fff;
-    font-size: 24px;
-    top: -4px;   
+    font-size: 34px;
+    top: 75px;
 }
+
 .notifications:hover .num:after {
     content: ' Notification'
 }
-#help:hover{
+
+#help:hover {
     color: #fff;
     font-size: 24px;
-    top: -4px; 
+    top: -4px;
 }
+
 #help:hover:after {
     content: ' How can i help you?'
 }
-#darkmode:hover{
+
+#darkmode:hover {
     color: #fff;
     font-size: 24px;
-    top: -4px; 
+    top: -4px;
 }
+
 #darkmode:hover:after {
     content: ' Dark or Light theme?'
 }
-.bell-ul{
+
+#help .not-ul {
+    top: 50px;
+}
+
+#darkmode .not-ul {
+    top: 50px;
+}
+
+/*notification uordnet list*/
+.not-ul {
     position: absolute;
     left: 0;
-    top: 60px;
+    top: 120px;
     margin: 0;
     width: 100%;
     background: #fff;
-    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
     padding: 20px;
     box-sizing: border-box;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     display: none;
 }
-.notifications:hover .bell-ul {
-	display: block;
+
+.notifications:hover .not-ul {
+    display: block;
 }
 
-.bell-ul li{
+.not-ul li {
     list-style: none;
-    border-bottom: 1px solid rgba(0,0,0,.1);
-    padding: 8px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    padding: 8px ;
     display: flex;
 }
 
-.bell-ul li:last-child{
+.not-ul li:last-child {
     border-bottom: none;
 }
 
-.bell-ul li .icon{
+.not-ul li .icon {
     width: 24px;
     height: 24px;
     background: #ccc;
@@ -109,33 +158,37 @@
     line-height: 24px;
     margin-right: 15px;
 }
-.bell-ul li .icon{
+
+.not-ul li .icon {
     color: #fff;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 4px;
 }
-.bell-ul li .text{
+
+.not-ul li .text {
     position: relative;
     font-family: sans-serif;
     color: black;
     top: 3px;
     cursor: pointer;
 }
-.bell-ul li:hover .text{
+
+.not-ul li:hover .text {
     font-weight: bold;
     color: #439a86;
 }
+
 #theBell {
-  position: absolute;
-  margin-left: -70px;
+    position: absolute;
+    margin-left: -70px;
 }
 
-#help{
-  position: absolute;
-  margin-left: -140px;
+#help {
+    position: absolute;
+    margin-left: -140px;
 }
+
 #darkmode {
-  position: absolute;
-  margin-left: -210px;
+    position: absolute;
+    margin-left: -70px;
 }
-
