@@ -410,8 +410,8 @@ header #headerLinks a {
 }
 .mainContainerTextTop {
   float: right;
-  display: block;
-  margin-bottom: ;
+  
+  margin-bottom: 10px;
   width: 80%;
   border-radius: 30px;
   border:2px solid #929292;
@@ -420,7 +420,7 @@ header #headerLinks a {
   text-align: left;
   font-family: 'Montserrat', sans-serif;
   overflow: visible;
-  opacity: 0.9;
+text-align: center;
 }
 
 .mainContainerText {
@@ -437,27 +437,24 @@ header #headerLinks a {
   font-family: 'Montserrat', sans-serif;
   color: slategrey;
 }
-.flex-container2{
-  background-color: #f1f1f1;
-  margin: 0px;
-  padding: 0px;
-  font-size: 30px;
-}
+
 .flex-container2{
     display: flex;
-float: left;
+    float: center;
   flex-direction: column;
   margin-top: 0px;
   margin-bottom: 0px;
-  border-radius: 30px;
+  border-radius: 0px;
     padding: 30px;
+    width: 80%;
   border:2px solid #929292;
   background-color: rgba(246,246,246,1.00);
     text-align: center;
   font-family: 'Montserrat', sans-serif;
+    justify-content: center;
 }
 .flex-ContainerContainer{
-float: left;
+float: center;
     display: flex;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -465,4 +462,10 @@ float: left;
   border:2px solid #929292;
   background-color: rgba(246,246,246,1.00);
   font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    text-align: center;
+}
+.Students {
+    text-align: center;
+    Students:nth-child(odd) {background-color: #f2f2f2;
 }
