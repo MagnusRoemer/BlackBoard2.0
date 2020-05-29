@@ -30,8 +30,11 @@ if (!isset($_SESSION['loggedin'])) {
 <body id="body">
     <div id="mainWrapper">
         <div id="headerLinks">
-            <p><img src="Assets/images/SDU_WHITE_RGB-png.png" alt="" width="310" height="183" id="SDU" />
+            <!-- WEBSIDE LOGO-->
+            <img src="Assets/images/SDU_WHITE_RGB-png.png" alt="" width="310" height="183" id="SDU" />
+                <!--THE TO NOTIFICATIONS "HELP & DARKMODE"-->
                 <div class="box2">
+                    <!-- HELP NOTIFICATION-->
                     <div class="notifications" id="help">
                         <i class="fas fa-question-circle"></i>
                         <ul class="not-ul">
@@ -46,6 +49,7 @@ if (!isset($_SESSION['loggedin'])) {
                     </div>
                 </div>
                 <div class="box2">
+                    <!-- DARKMODE NOTIFICATION-->
                     <div class="notifications" id="darkmode">
                         <i class="fas fa-adjust"></i>
                         <ul class="not-ul">
@@ -62,49 +66,50 @@ if (!isset($_SESSION['loggedin'])) {
         </div>
         <header>
             <section id="offer">
-                <!-- The offer section displays a banner text for promotions -->
+                <!--THE PROFILE PIC WITH NOTIFICATIONS-->
                 <div class="box1">
                     <div class="notifications" id="profileNot">
                         <a href="Profile.html" title="Profile"><img src="Assets/images/man-profile-cartoon_18591-58483.jpg" alt="Profile Picture" width="130" height="130" id="profilePic" </a>
-                        <span class="num">4</span>
-                        <ul class="not-ul">
-                            <li>
-                                <span class="icon"><i class="fas fa-user"></i></span>
-                                <span class="text">Course Announcement → Videregående udvikling af 3D applikationer, (F20)</span>
-                            </li>
-                            <li>
-                                <span class="icon"><i class="fas fa-user"></i></span>
-                                <span class="text">Course Announcement → Distribueret programmering, (F20)</span>
-                            </li>
-                            <li>
-                                <span class="icon"><i class="fas fa-user"></i></span>
-                                <span class="text">Course Announcement → Udvikling af interaktive, digitale systemer til mennesker, forår 20.</span>
-                            </li>
-                            <li>
-                                <span class="icon"><i class="fas fa-user"></i></span>
-                                <span class="text">Content Pensum til skriftlig eksamen Available</span>
-                            </li>
-                        </ul>
+                            <span class="num">4</span>
+                            <ul class="not-ul">
+                                <li>
+                                    <span class="icon"><i class="fas fa-user"></i></span>
+                                    <span class="text">Course Announcement → Videregående udvikling af 3D applikationer, (F20)</span>
+                                </li>
+                                <li>
+                                    <span class="icon"><i class="fas fa-user"></i></span>
+                                    <span class="text">Course Announcement → Distribueret programmering, (F20)</span>
+                                </li>
+                                <li>
+                                    <span class="icon"><i class="fas fa-user"></i></span>
+                                    <span class="text">Course Announcement → Udvikling af interaktive, digitale systemer til mennesker, forår 20.</span>
+                                </li>
+                                <li>
+                                    <span class="icon"><i class="fas fa-user"></i></span>
+                                    <span class="text">Content Pensum til skriftlig eksamen Available</span>
+                                </li>
+                            </ul>
                     </div>
                 </div>
-                    <ul>
-                        <li><a>Name: John Doe</a></li>
-                        <li><a>Ex-nr: 000000</a></li>
-                        <li><a>Mail: jodoe20@student.sdu.dk</a></li>
-                    </ul>
+                <!--PROFILE DATA-->
+                <ul>
+                    <li><a>Name: John Doe</a></li>
+                    <li><a>Ex-nr: 000000</a></li>
+                    <li><a>Mail: jodoe20@student.sdu.dk</a></li>
+                </ul>
             </section>
         </header>
         <div id="content">
             <section class="sidebar">
-                <!-- This adds a sidebar with 1 searchbox,2 menusets, each with 4 links -->
+                <!-- THE SIDEBAR-->
                 <div id="menubar">
                     <nav class="menu theNAV">
-                        <h2>
-                            <!-- Title for menu-->myTEK </h2>
+                        <!-- TITLE OF SIDEBAR-->
+                        <h2>myTEK </h2>
                         <input type="text" id="search" value="search">
                         <hr>
                         <ul class="menuButtons">
-                            <!-- List of links under menuset 1 -->
+                            <!-- THE LINKS IN THE SIDE BAR -->
                             <li><a href="home.php">Home&nbsp;</a></li>
                             <li><a href="Profile.html">Profile&nbsp;</a></li>
                             <li><a href="Courses.html">Courses&nbsp;</a></li>
@@ -123,33 +128,6 @@ if (!isset($_SESSION['loggedin'])) {
                 <div class="flex-container">
                     <!-- The content.html get loaded here-->
                 </div>
-                <footer>
-                    <!-- This is the footer with default 3 divs -->
-                    <div>
-                        <ul class="footerlinks">
-                            <li><a href="#" title="Link">Find Person&nbsp;</a></li>
-                            <li><a href="#" title="Link">Vejviser&nbsp;</a></li>
-                            <li><a href="#" title="Link">Databekyttelse på SDU&nbsp;</a></li>
-                            <li><a href="#" title="Link">Vores verdensmål&nbsp;</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul class="footerlinks">
-                            <li><a href="#" title="Link">TLF: 6550100&nbsp;</a></li>
-                            <li><a href="#" title="Link">MAIL: SDU@SDU.DK&nbsp;</a></li>
-                            <li><a href="#" title="Link">CVR-NR:29283958&nbsp;</a></li>
-                            <li><a href="#" title="Link">EAN&nbsp;</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul class="footerlinks">
-                            <li><a href="#" title="Link">Facebook&nbsp;</a></li>
-                            <li><a href="#" title="Link">Instagram</a></li>
-                            <li><a href="#" title="Link">Linkedin</a></li>
-                            <li><a href="#" title="Link">Youtube&nbsp;</a></li>
-                        </ul>
-                    </div>
-                </footer>
         </div>
 </body>
 

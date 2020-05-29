@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 /* Global Styles */
 #SDU {
     float: left;
@@ -7,6 +6,7 @@
     width: 10%;
     height: auto;
     background-color: transparent;
+    padding: 5px;
 }
 
 /*header*/
@@ -16,17 +16,6 @@ header {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-}
-
-/* Logo placeholder*/
-#logo {
-    float: left;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 139px;
-    text-align: center;
-    color: rgba(255, 255, 255, 1.00);
-    background-color: rgba(190, 190, 190, 1.00);
 }
 
 /* div for Links in header */
@@ -64,6 +53,7 @@ header {
     font-weight: bold;
 }
 
+/*profile picture*/
 #offer #profilePic {
     position: relative;
     float: left;
@@ -71,6 +61,62 @@ header {
     margin-left: -62px;
     top: -10px
 }
+
+#body {
+    background-image: url("../images/background-balance-business-commerce-583846.jpg");
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -100;
+    min-height: 100%;
+    min-width: 1040px;
+}
+
+.mainContainer {
+    float: right;
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    width: 80%;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: rgba(246, 246, 246, 1.00);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mainContainerTextTop {
+    float: right;
+
+    margin-bottom: 10px;
+    width: 80%;
+    border-radius: 30px;
+    border: 2px solid #929292;
+    padding: 20px;
+    background-color: rgba(67, 154, 134, 1.00);
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    overflow: visible;
+    text-align: center;
+}
+
+.mainContainerText {
+    float: right;
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 80%;
+    border-radius: 30px;
+    border: 2px solid #929292;
+    padding: 20px;
+    background-color: rgba(246, 246, 246, 1.00);
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    color: slategrey;
+}
+
 
 /* Main content of the site */
 #content {
@@ -129,41 +175,6 @@ header {
     text-align: center;
 }
 
-/* footer */
-#mainWrapper footer {
-    clear: both;
-    overflow: auto;
-    background-color: rgba(208, 207, 207, 1.00);
-    font-family: source-sans-pro, sans-serif;
-    font-style: normal;
-    font-weight: 200;
-    line-height: 1.8;
-    padding-top: 22px;
-    padding-left: 22px;
-    text-align: center;
-    padding-bottom: 22px;
-    padding-right: 22px;
-    border-radius: 20px;
-}
-
-/*Each footer content */
-#mainWrapper footer div {
-    width: 27%;
-    float: left;
-    padding-left: 4%;
-    padding-right: 2%;
-    color: rgba(255, 255, 255, 1.00);
-    text-align: justify;
-}
-
-/* Links in footer */
-footer div a {
-    color: rgba(146, 146, 146, 1.00);
-    display: block;
-    text-decoration: none;
-    text-align: center;
-}
-
 /*Links/Button in sidebar */
 .sidebar #menubar .menu ul li a {
     box-shadow: 0px 1px 0px 0px #1c1b18;
@@ -208,18 +219,10 @@ footer div a {
     text-align: center
 }
 
-/* Menus in sidebar 							this is the one*/
+/* Menus in sidebar*/
 .sidebar #menubar .menu {
     margin-bottom: 29px;
     position: relative;
-
-
-}
-
-/* Container for links in footer */
-footer .footerlinks {
-    margin-top: -15px;
-    margin-bottom: -15px;
 }
 
 /* Media query for tablets */
@@ -303,40 +306,6 @@ footer .footerlinks {
         margin-top: 40px;
     }
 
-    /* Container for links in footer */
-    #mainWrapper footer .footerlinks {
-        float: none;
-        width: 100%;
-        position: relative;
-        top: 17px;
-        clear: both;
-        text-align: center;
-        left: 0%;
-        margin-top: 40px;
-    }
-
-    /* Container for each footer divisions */
-    #mainWrapper footer div {
-        width: 44%;
-        text-align: justify;
-        font-size: 15px;
-    }
-
-    /* Links in footer */
-    .footerlinks p a {
-        padding-top: 0px;
-        padding-bottom: 0px;
-        display: inline;
-        padding-right: 35px;
-    }
-
-    /* Footer region */
-    #mainWrapper footer {
-        padding-left: 16px;
-        overflow: hidden;
-        border-radius: 90px;
-    }
-
     /* Links in header */
     header #headerLinks a {
         position: relative;
@@ -347,11 +316,6 @@ footer .footerlinks {
     /* Offer- Text banner */
     #mainWrapper #offer {
         padding-left: 22%;
-    }
-
-    /* Paragraphs in footer */
-    footer .footerlinks li {
-        display: inline;
     }
 }
 
@@ -398,24 +362,11 @@ footer .footerlinks {
         display: block;
     }
 
-    #mainWrapper footer div {
-        width: 100%;
-        margin-left: -16px;
-        text-align: justify;
-        padding-bottom: 16px;
-        overflow: auto;
-    }
 
     /* Unordered list for menu elements */
     .menu ul {
         position: relative;
         padding-left: 24%;
-    }
-
-    /* Container for links in footer */
-    #mainWrapper footer .footerlinks {
-        padding-left: 8%;
-        padding-top: 30px;
     }
 
     /* Main content which excludes the sidebar */
@@ -425,65 +376,6 @@ footer .footerlinks {
         width: 100%;
         padding-left: 0px;
     }
-}
-
-#SDU {
-    padding-bottom: 20px;
-}
-
-#body {
-    background-image: url("../images/background-balance-business-commerce-583846.jpg");
-    width: 100%;
-    height: auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -100;
-    min-height: 100%;
-    min-width: 1040px;
-}
-
-.mainContainer {
-    float: right;
-    display: block;
-    margin-top: 0px;
-    margin-bottom: 40px;
-    width: 80%;
-    border-radius: 30px;
-    padding: 10px;
-    background-color: rgba(246, 246, 246, 1.00);
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.mainContainerTextTop {
-    float: right;
-
-    margin-bottom: 10px;
-    width: 80%;
-    border-radius: 30px;
-    border: 2px solid #929292;
-    padding: 20px;
-    background-color: rgba(67, 154, 134, 1.00);
-    text-align: left;
-    font-family: 'Montserrat', sans-serif;
-    overflow: visible;
-    text-align: center;
-}
-
-.mainContainerText {
-    float: right;
-    display: block;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    width: 80%;
-    border-radius: 30px;
-    border: 2px solid #929292;
-    padding: 20px;
-    background-color: rgba(246, 246, 246, 1.00);
-    text-align: left;
-    font-family: 'Montserrat', sans-serif;
-    color: slategrey;
 }
 
 .flex-container2 {
