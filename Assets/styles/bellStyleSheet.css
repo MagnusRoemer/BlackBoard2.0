@@ -44,10 +44,10 @@
 }
 /*"help & darktheme" notification*/
 .notifications:hover {
-    width: 300px;
-    height: 60px;
+    width: 230px;
+    height: 50px;
     text-align: left;
-    padding: 0 15px;
+    padding: 0 5px;
     background: #439a86;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
@@ -55,9 +55,9 @@
 }
 /*"help & darktheme" icons*/
 .notifications .fas {
-    color: #cecece;
+    color: #439a86;
     line-height: 60px;
-    font-size: 30px;
+    font-size: 40px;
 }
 /*"help & darktheme" icons*/
 .notifications:hover .fas {
@@ -74,7 +74,7 @@
     background: #ff2c74;
     color: #fff;
     line-height: 25px;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
 /*number on the side of the profile pic*/
@@ -88,6 +88,16 @@
 /*the header of the profile pic notification*/
 .notifications:hover .num:after {
     content: ' Notification'
+}
+/*The seachbar*/
+#searchBar {
+    position: ;
+    border-radius: 5px;
+    height: 25px;
+    text-align: center;
+    color: rgba(208, 207, 207, 1.00);
+    font-size: 20px;
+
 }
 /*what happen when your hover over help*/
 #help:hover {
@@ -164,15 +174,17 @@
     font-size: 16px;
     line-height: 4px;
 }
-/*text in unorganized list of the notifications*/
+/*Profile notifications content*/
 .not-ul li .text {
     position: relative;
-    font-family: sans-serif;
-    color: black;
+    font-family: 'Montserrat', sans-serif;
+    color: slategrey;
     top: 3px;
     cursor: pointer;
+    font-size: 20px;
 }
-/*text in unorganized list of the notifications*/
+
+/*Profile notifications content*/
 .not-ul li:hover .text {
     font-weight: bold;
     color: #439a86;
@@ -185,10 +197,12 @@
 
 #help {
     position: absolute;
-    margin-left: -140px;
+    margin-left: -155px;
+    top: 0px;
 }
 
 #darkmode {
     position: absolute;
-    margin-left: -70px;
+    margin-left: -80px;
+    top: 0px;
 }

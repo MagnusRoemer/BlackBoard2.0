@@ -38,13 +38,12 @@ header {
     color: slategrey;
     padding-left: 15px;
     padding: 2px;
-    border-bottom-left-radius: 30px;
 }
 
 #offer ul li {
     margin: 8px;
 }
-
+/*Profile data text*/
 #offer ul li a {
     float: left;
     position: absolute;
@@ -185,7 +184,7 @@ header {
     display: inline-block;
     cursor: pointer;
     color: black;
-    font-family: Arial;
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: bold;
     padding: 8px 18px;

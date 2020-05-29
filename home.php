@@ -34,6 +34,7 @@ if (!isset($_SESSION['loggedin'])) {
             <img src="Assets/images/SDU_WHITE_RGB-png.png" alt="" width="310" height="183" id="SDU" />
                 <!--THE TO NOTIFICATIONS "HELP & DARKMODE"-->
                 <div class="box2">
+                    <input type="text" id="searchBar" value="search">
                     <!-- HELP NOTIFICATION-->
                     <div class="notifications" id="help">
                         <i class="fas fa-question-circle"></i>
